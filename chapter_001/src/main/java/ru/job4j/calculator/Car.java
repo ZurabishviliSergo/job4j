@@ -4,7 +4,6 @@ package ru.job4j.calculator;
  *
  * @author Sergo Zurabishvili (Kekelidze78@gmail.com).
  * @since 04.01.2019.
- *
  */
 public class Car {
     private double volume;

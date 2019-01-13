@@ -13,4 +13,8 @@ public class Calculator {
     public double getResult(){
         return this.result;
     }
+    public void add(double first, double second) {
+
+    }
+
 }

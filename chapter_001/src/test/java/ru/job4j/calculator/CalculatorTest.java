@@ -14,9 +14,9 @@ public class CalculatorTest  {
     @Test
     public void whenAddOnePlusOneThenTwo()  {
         Calculator calc = new Calculator();
-        calc.add(1D, 1D);
+        calc.add(1, 1);
         double result = calc.getResult();
-        double expected = 2D;
+        double expected = 2;
         assertThat(result, is(expected));
     }
 
@@ -24,22 +24,22 @@ public class CalculatorTest  {
      * test subtract
      */
     @Test
-    public void whenAddThreeMinusOneEqualsTwo()  {
+    public void whenSubtThreeMinusOneEqualsTwo()  {
         Calculator calc = new Calculator();
-        calc.add(3D, 1D);
+        calc.add(3, 1);
         double result = calc.getResult();
-        double expected = 2D;
+        double expected = 2;
         assertThat(result, is(expected));
     }
     /**
      * test multiply
      */
     @Test
-    public void whenAddThreeMultiplyTwoEqualsSix(){
-        Calculator calc =new Calculator();
-        calc.add(3D, 2D);
+    public void whenMultThreeMultiplyTwoEqualsSix(){
+        Calculator calc = new Calculator();
+        calc.add(3, 2);
         double result = calc.getResult();
-        double expected = 6D;
+        double expected = 6;
         assertThat(result, is(expected));
     }
 
@@ -47,11 +47,11 @@ public class CalculatorTest  {
      * test divided
      */
     @Test
-    public void whenAddFourDividedTwoEqualsTwo(){
+    public void whenDivdFourDividedTwoEqualsTwo(){
         Calculator calc = new Calculator();
-        calc.add(4D, 2D);
+        calc.add(4, 2);
         double result = calc.getResult();
-        double expected = 2D;
+        double expected = 2;
         assertThat(result, is(expected));
     }
 }

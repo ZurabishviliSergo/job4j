@@ -32,7 +32,6 @@ public class Converter{
     public int EuroToRuble(int value) {
         return value *77;
     }
-
     /**
      * Конвертируем доллары в рубли.
      * @param value Доллары.

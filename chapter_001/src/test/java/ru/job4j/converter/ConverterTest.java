@@ -39,7 +39,7 @@ public class ConverterTest {
     /**
      * test Converter Euro to Rubles
      */
-    public void when1EuroToRublesThen77(){
+    public void when1EuroToRublesThen77() {
         Converter converter = new Converter();
         int result = converter.EuroToRuble(1);
         assertThat(result, is(77));

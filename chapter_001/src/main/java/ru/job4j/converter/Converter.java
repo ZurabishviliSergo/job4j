@@ -5,7 +5,7 @@ package ru.job4j.converter;
  * @since 13.01.2019
  *
  */
-public class Converter{
+public class Converter {
     public double result;
     /**
      * Конвертируем рубли в евро.
@@ -13,7 +13,7 @@ public class Converter{
      * @return Евро.
      */
     public int rubleToEuro(int value) {
-        return value /77;
+        return value / 77;
     }
 
     /**
@@ -22,23 +22,22 @@ public class Converter{
      * @return Доллары.
      */
     public int rubleToDollar(int value) {
-        return value /69;
+        return value / 69;
     }
     /**
      * Конвертируем евро в рубли.
      * @param value Евро.
      * @return рубли.
      */
-    public int EuroToRuble(int value) {
-        return value *77;
+    public int euroToRuble(int value) {
+        return value * 77;
     }
     /**
      * Конвертируем доллары в рубли.
      * @param value Доллары.
      * @return рубли.
      */
-    public int DollarToRuble(int value) {
-        return value *69;
+    public int dollarToRuble(int value) {
+        return value * 69;
     }
-
 }

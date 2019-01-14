@@ -35,7 +35,7 @@ public class CalculatorTest  {
      * test multiply
      */
     @Test
-    public void whenMultThreeMultiplyTwoEqualsSix(){
+    public void whenMultThreeMultiplyTwoEqualsSix() {
         Calculator calc = new Calculator();
         calc.add(3, 2);
         double result = calc.getResult();
@@ -47,7 +47,7 @@ public class CalculatorTest  {
      * test divided
      */
     @Test
-    public void whenDivdFourDividedTwoEqualsTwo(){
+    public void whenDivdFourDividedTwoEqualsTwo() {
         Calculator calc = new Calculator();
         calc.add(4, 2);
         double result = calc.getResult();

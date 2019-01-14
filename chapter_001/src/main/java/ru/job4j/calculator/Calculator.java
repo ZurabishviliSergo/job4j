@@ -8,10 +8,10 @@ package ru.job4j.calculator;
 public class Calculator {
     private double result;
 
-    public void add(double first, double second){
+    public void add(double first, double second) {
         this.result = first + second;
     }
-    public double getResult(){
+    public double getResult() {
         return this.result;
     }
 
@@ -32,7 +32,7 @@ public class Calculator {
     /**
      * method divided
      */
-    public void divd(double first, double second){
+    public void divd(double first, double second) {
         this.result = first / second;
     }
 

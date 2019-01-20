@@ -1,4 +1,8 @@
 package ru.job4j.max;
+
+import org.junit.Test;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 /**
  * @author Sergo Zurabishvili (Kekelidze78@gmail.com).
  * @since 20.01.2019.

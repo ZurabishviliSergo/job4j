@@ -1,4 +1,4 @@
-package ru.job4j.condition;
+package ru.job4j.max;
 
 /**
  * @author Sergo Zurabishvili (Kekelidze78@gmail.com).

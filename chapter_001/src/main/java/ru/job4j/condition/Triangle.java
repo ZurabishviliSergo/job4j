@@ -54,7 +54,6 @@ public class Triangle {
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
      *
-     * Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
      *
      * @param ab Длина от точки a b.
      * @param ac Длина от точки a c.
@@ -62,6 +61,6 @@ public class Triangle {
      * @return
      */
     private boolean exist(double ab, double ac, double bc) {
-        return false;
+        return ((ac < ab + bc) && (ab < ac + bc) && (bc < ab + ac));
     }
 }

@@ -32,7 +32,7 @@ public class ConverterTest {
     @Test
     public void when1DollarToRubleThen69() {
         Converter converter = new Converter();
-        int result = converter.DollarToRuble(1);
+        int result = converter.dollarToRuble(1);
         assertThat(result, is(69));
     }
 
@@ -41,7 +41,7 @@ public class ConverterTest {
      */
     public void when1EuroToRublesThen77() {
         Converter converter = new Converter();
-        int result = converter.EuroToRuble(1);
+        int result = converter.euroToRuble(1);
         assertThat(result, is(77));
     }
 }

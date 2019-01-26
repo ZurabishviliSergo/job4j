@@ -2,7 +2,7 @@ package ru.job4j.loop;
 /**
  * @class Counter.
  * @author Sergo Zurabishvili (Kekelidz78@gmail.com).
- * since 2.01.2019.
+ * @since 26.01.2019.
  */
 public class Counter {
     /**

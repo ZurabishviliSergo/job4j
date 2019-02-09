@@ -42,4 +42,20 @@ public void whenPyramid4Left() {
                 )
         );
     }
+    @Test
+    public void pyramid() {
+        Paint paint = new Paint();
+        String rst = paint.pyramid( 4);
+        System.out.println(rst);
+        assertThat(rst,
+                is(
+                        new StringJoiner(System.lineSeparator(), "", System.lineSeparator())
+                                .add("   ^   ")
+                                .add("  ^^^  ")
+                                .add(" ^^^^^ ")
+                                .add("^^^^^^^")
+                                .toString()
+                )
+        );
+    }
 }

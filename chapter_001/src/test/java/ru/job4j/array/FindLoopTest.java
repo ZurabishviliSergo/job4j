@@ -8,16 +8,24 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 /*
-*Test FindLoop
+ *Test FindLoop
  */
 public class FindLoopTest {
+
     @Test
-    public void whenArrayHasLenghThen0() {
+    public void whenArrayHasLengh5Then0() {
         FindLoop find = new FindLoop();
-        int[] input = new int[] {
-                5, 10, 3
-        };
+        int[] input = new int[] {5, 10, 3};
         int value = 5;
+        int result = find.index(input, value);
+        int expect = 0;
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenArrayHasLengh4Then0() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {5, 10, 3};
+        int value = 4;
         int result = find.index(input, value);
         int expect = 0;
         assertThat(result, is(expect));

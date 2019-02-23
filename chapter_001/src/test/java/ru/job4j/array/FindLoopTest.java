@@ -22,12 +22,12 @@ public class FindLoopTest {
         assertThat(result, is(expect));
     }
     @Test
-    public void whenArrayHasLengh4Then0() {
+    public void whenArrayHasLengh4ThenMinus1() {
         FindLoop find = new FindLoop();
         int[] input = new int[] {5, 10, 3};
         int value = 4;
         int result = find.index(input, value);
-        int expect = 0;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 }

@@ -9,8 +9,9 @@ public class Check {
     public boolean mono(boolean[] data) {
         for (boolean v:data) {
             if (data[0] != v) {
-                return false;
-            }
+                boolean result = false;
+                break;
+         }
         }
         return true;
     }

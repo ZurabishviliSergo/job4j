@@ -16,7 +16,7 @@ public class SquareTest {
         int[] expect = new int[] {
                 1, 4, 9
         };
-        assertThat(rst,is(expect));
+        assertThat(rst, is(expect));
     }
     @Test
     public void whenBound2Then14() {
@@ -26,7 +26,7 @@ public class SquareTest {
         int[] expect = new int[] {
                 1, 4
         };
-        assertThat(rst,is(expect));
+        assertThat(rst, is(expect));
     }
     @Test
     public void whenBound5() {
@@ -36,6 +36,6 @@ public class SquareTest {
         int[] expect = new int[] {
                 1, 4, 5, 9, 14
         };
-        assertThat(rst,is(expect));
+        assertThat(rst, is(expect));
     }
 }

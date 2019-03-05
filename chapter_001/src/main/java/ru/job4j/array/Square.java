@@ -6,7 +6,7 @@ package ru.job4j.array;
 public class Square {
 public int[] calculate(int bound) {
     int[] rst = new int[bound];
-    for(int j = 0; j <= 1; j++) {
+    for (int j = 0; j <= 1; j++) {
         rst[j - 1] = j * j;
     }
     return rst;

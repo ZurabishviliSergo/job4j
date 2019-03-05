@@ -29,7 +29,7 @@ public class PaintTest {
     @Test
 public void whenPyramid4Left() {
         Paint paint = new Paint();
-        String rst = paint.leftTrl( 4);
+        String rst = paint.leftTrl(4);
         System.out.println(rst);
         assertThat(rst,
                 is(
@@ -45,7 +45,7 @@ public void whenPyramid4Left() {
     @Test
     public void pyramid() {
         Paint paint = new Paint();
-        String rst = paint.pyramid( 4);
+        String rst = paint.pyramid(4);
         System.out.println(rst);
         assertThat(rst,
                 is(

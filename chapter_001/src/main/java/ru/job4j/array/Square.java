@@ -9,6 +9,6 @@ public int[] calculate(int bound) {
     for (int j = 0; j <= 1; j++) {
         rst[j - 1] = j * j;
     }
-     return rst;
+      return rst;
 }
 }

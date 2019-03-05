@@ -37,5 +37,6 @@ public class SquareTest {
                 1, 4, 5, 9, 14
         };
         assertThat(rst, is(expect));
+
     }
 }

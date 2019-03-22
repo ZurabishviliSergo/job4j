@@ -8,10 +8,13 @@ package ru.job4j.array;
 public class MatrixCheck {
     public boolean mono(boolean[][] data) {
         boolean result = true;
-        for (int i = 0; i < data.length; i++) {
-            if (data[1][1] != data[i][i] || data[1][1] != data[data.length - 1 - i][i]) {
+        int size = data[0].length;
+        boolean firstDiagonal = data[0][0];
+        boolean secondDiagonal = data[0][size - 1];
+        for (int i = 1; i < size; i++) {
+            if ((data[i][i] != firstDiagonal) || (data[i][size - i - 1] != secondDiagonal)) {
                 result = false;
-                return result;
+                break;
             }
         }
         return result;

@@ -4,11 +4,11 @@ import ru.job4j.puzzle.firuges.Cell;
 import ru.job4j.puzzle.firuges.Figure;
 
 /**
+ * //TODO add comments.
  *
- *
- * @author Sergo Zurabishvili (Kekelidze78@gmail.com).
+ * @author Petr Arsentev (parsentev@yandex.ru)
  * @version $Id$
- * @since 19.04.2019.
+ * @since 0.1
  */
 public class Logic {
     private final int size;

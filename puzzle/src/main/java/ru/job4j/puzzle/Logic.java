@@ -6,9 +6,9 @@ import ru.job4j.puzzle.firuges.Figure;
 /**
  * //TODO add comments.
  *
- * @author Petr Arsentev (parsentev@yandex.ru)
- * @version $Id$
- * @since 0.1
+ * @author Sergo Zurabishvili (Kekelidze78@gmail.com).
+ * @version $Id$.
+ * @since 20.04.2019.
  */
 public class Logic {
     private final int size;
@@ -69,8 +69,56 @@ public class Logic {
     public boolean isWin() {
         int[][] table = this.convert();
         boolean result = false;
+
+//        for (int[] t: table) {
+//            if ((t[0] == 1)) {
+//                result = true;
+//                for (int j = 0; j < t.length - 1; j++) {
+//                    if (t[j] != t[j + 1]) {
+//                        result = false;
+//                        break;
+//                    }
+//                }
+//            }
+//
+//        }
+//        if (!result) {
+//            for(int i = 0; i < table.length; i++) {
+//                if ((table[0][i] == 1)) {
+//                    result = true;
+//                    for (int j = 0; j < table[i].length - 1; j++) {
+//                        if (table[j][i] != table[j + 1][i]) {
+//                            result = false;
+//                            break;
+//                        }
+//                    }
+//                }
+//            }
+//        }
+
+
+        for(int i = 0; i < table.length; i++) {
+            int g = 0;
+            int v = 0;
+            for (int j = 0; j < table[i].length; j++) {
+                if (table[i][j] == 1) {
+                g++;
+                }
+                if (table[j][i] == 1) {
+                   v++;
+                }
+            }
+            if (g == 0 || v == 0) {
+                result = true;
+                break;//тут напиши проверку что счетчики равны длине массива если да то брейк если нет то на след круг
+            }
+//как бы все. все работает
+        }
         return result;
     }
+
+//можно сразу и горизонталь и вертикаль проверять
+    //сделай два цикла и два счетчика
 
     public int[][] convert() {
         int[][] table = new int[this.size][this.size];

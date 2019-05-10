@@ -108,7 +108,7 @@ public class Logic {
                    v++;
                 }
             }
-            if (g == 0 || v == 0) {
+            if (g == table[i].length || v == table[i].length) {
                 result = true;
                 break;//тут напиши проверку что счетчики равны длине массива если да то брейк если нет то на след круг
             }
